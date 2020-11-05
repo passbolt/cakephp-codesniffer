@@ -367,6 +367,9 @@ class FunctionCommentSniff extends PearFunctionCommentSniff
                     $suggestedName = 'bool';
                 } elseif (in_array($typeName, ['int', 'bool'])) {
                     $suggestedName = $typeName;
+                } elseif (in_array($typeName, ['Resource'])) {
+                    // do not suggest to non equivalent lower class type
+                    $suggestedName = $typeName;
                 } else {
                     $suggestedName = Common::suggestType($typeName);
                 }
