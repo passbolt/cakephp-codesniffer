@@ -1,5 +1,5 @@
 {
-    "name": "cakephp/cakephp-codesniffer",
+    "name": "passbolt/cakephp-codesniffer",
     "description": "CakePHP CodeSniffer Standards",
     "type": "phpcodesniffer-standard",
     "keywords": ["framework", "codesniffer"],
